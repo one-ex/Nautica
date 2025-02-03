@@ -1,4 +1,4 @@
-name = "nautica"
+name = "proxy"
 main = "_worker.js"
 compatibility_date = "2023-08-23"
 
@@ -7,3 +7,11 @@ enabled = true
 
 [observability.logs]
 enabled = true
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
+
+ [env.staging.observability]
+enabled = true
+head_sampling_rate = 1 # optional
